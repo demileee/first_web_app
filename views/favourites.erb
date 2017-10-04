@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Favourite Links</title>
+  </head>
+  <body>
+    <h1>Fav Links!</h1>
+    <ul>
+      <% @links.each do |name, link| %>
+        <li><a href="<%= link %>" target="_blank"><%= name %></a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
